@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    transition: all .2s ease 0s
+}
+
+*:hover {transition: all .2s ease 0s}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #1ca4fc
+}
+
+/**************************************************
+****************** FIRST SECTION ******************
+**************************************************/
+    .bg-white {
+        display: flex;
+        flex-direction: column
+    }
+
+    .red {
+        background-color: red;
+        margin-bottom: 10px;
+        flex: 1 0 100px
+    }
+/**************************************************
+****************** FIRST SECTION ******************
+**************************************************/
+
+/**************************************************
+***************** SECOND SECTION ******************
+**************************************************/
+    #second {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px
+    }
+
+    .orange {
+        background-color: #f7b92b;
+        margin-bottom: 20px;
+        flex: 1 0 200px
+    }
+/**************************************************
+***************** SECOND SECTION ******************
+**************************************************/
+
+/**************************************************
+****************** THIRD SECTION ******************
+**************************************************/
+    #third {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px
+    }
+
+    .bg-green {
+        display: flex;
+        flex-direction: column;
+        background-color: #65D643;
+        padding: 20px 20px 10px 20px;
+        margin-bottom: 15px;
+        flex: 1 0 150px
+    }
+
+    .pink {
+        background-color: #ed62a7;
+        margin-bottom: 10px;
+        flex: 1 0 110px
+    }
+/**************************************************
+****************** THIRD SECTION ******************
+**************************************************/
+
+@media (min-width: 1050px)
+{
+    body {
+        padding: 10px;
+        display: flex;
+        justify-content: center
+    }
+
+    #container {
+        max-width: 1071px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /**************************************************
+    ****************** FIRST SECTION ******************
+    **************************************************/
+        .bg-white {
+            background-color: white;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 5px 0;
+        }
+    
+        .red {
+            margin-bottom: 0;
+            height: 100px;
+            width: 200px;
+            flex: unset
+        }
+    /**************************************************
+    ****************** FIRST SECTION ******************
+    **************************************************/
+    
+    
+    /**************************************************
+    ***************** SECOND SECTION ******************
+    **************************************************/
+        #second {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 0;
+        }
+    
+        .orange {
+            margin-right: 25px;
+            margin-bottom: 0;
+            height: 200px;
+            width: 500px;
+            flex: unset
+        }
+    /**************************************************
+    ***************** SECOND SECTION ******************
+    **************************************************/
+    
+    
+    /**************************************************
+    ****************** THIRD SECTION ******************
+    **************************************************/
+        #third {
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px 0
+        }
+    
+        .bg-green {
+            align-items: center;
+            justify-content: center;
+            margin-right: 25px;
+            margin-bottom: 0;
+            padding: 0;
+            height: 250px;
+            flex: unset
+        }
+    
+        /* J'ai bien vu le premier piège ;p */
+        #tricky-one {
+            width: 515px;
+            padding-right: 100px
+        }
+    
+        /* Et j'ai bien vu le second :D */
+        #tricky-two {
+            width: 500px;
+            padding-top: 25px
+        }
+    
+        .pink {
+            margin: 10px;
+            height: 75px;
+            width: 200px;
+            flex: unset
+        }
+    /**************************************************
+    ****************** THIRD SECTION ******************
+    **************************************************/
+}
