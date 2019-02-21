@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    transition: all .2s ease 0s
+}
+
+*:hover {transition: all .2s ease 0s}
+
+body {
+    margin: 0;
+    border: 7.5px solid black;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+@media (max-width: 1050px)
+{
+    body {border: 2.5px solid black}
+}
+
+/**********************************
+***** Remove Default Settings *****
+**********************************/
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0
+    }
+/**********************************
+***** Remove Default Settings *****
+**********************************/
+
+
+/**************************************************
+***************** HEADER & FOOTER *****************
+**************************************************/
+    .sandwich {
+        padding: 10px;
+        background-color: #86cbfd;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 100px
+    }
+
+    @media (max-width: 1050px)
+    {
+        .sandwich {
+            background-color: #008e00;
+            padding: 20px;
+            font-size: 40px;
+            color: white
+        }
+    }
+
+    @media (max-width: 750px)
+    {
+        .sandwich {background-color: #86cbfd}
+    }
+/**************************************************
+***************** HEADER & FOOTER *****************
+**************************************************/
+
+/**************************************************
+*********************** MAIN **********************
+**************************************************/
+    main {
+        display: flex;
+        border-top: 7.5px solid black;
+        border-bottom: 7.5px solid black
+    }
+    
+    article {
+        padding: 10px 10px 50px 10px;
+        background-color: #fecccd;
+        border-left: 7.5px solid black;
+        border-right: 7.5px solid black;
+        order: 1;
+        flex: 2
+    }
+
+    article h3 {
+        margin: 0;
+        font-size: 75px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center
+    }
+
+    aside {
+        padding: 10px;
+        background-color: #cb9acb;
+        text-transform: uppercase
+    }
+
+    #menu {
+        font-size: 40px;
+        flex: 1
+    }
+
+    #menu h5 {
+        margin: 0;
+        font-size: 50px;
+        font-weight: normal;
+        text-align: center
+    }
+
+    #ad {
+        order: 2;
+        flex: 1
+    }
+
+    #ad strong {
+        display: block;
+        font-size: 75px;
+        font-weight: normal;
+        text-align: center
+    }
+
+    @media (max-width: 1050px)
+    {
+        main {
+            flex-wrap: wrap;
+            border-top: 2.5px solid black;
+            border-bottom: 2.5px solid black
+        }
+
+        article {
+            padding: 50px 50px;
+            background-color: #935100;
+            border-left: 2.5px solid black;
+            border-right: 0;
+            color: white;
+            flex: 3 0 560px
+        }
+
+        article h3, p {max-width: 100%}
+
+        article h3 {font-size: 32.5px}
+
+        article p {text-align: justify}
+
+        aside {padding: 30px}
+
+        #menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: red;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            flex: 1 0 185px
+        }
+
+        #menu h5 {
+            margin: 5px 0;
+            font-size: inherit;
+            text-transform: initial
+        }
+
+        #ad {
+            display: flex;
+            justify-content: space-between;
+            background-color: #005392;
+            border-top: 2.5px solid black;
+            flex: 1 0 745px
+        }
+
+        #ad strong {
+            font-size: 32.5px;
+            color: white
+        }
+    }
+
+    @media (max-width: 750px)
+    {
+        article {
+            background-color: #fecccd;
+            border-left: 0;
+            border-bottom: 2.5px solid black;
+            order: unset
+        }
+
+        article, #menu, #ad {flex: 1 0 395px}
+
+        #menu, #ad {background-color: #cb9acb}
+    }
+/**************************************************
+*********************** MAIN **********************
+**************************************************/
