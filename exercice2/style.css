@@ -1,0 +1,71 @@
+/**********************************
+***** Remove Default Settings *****
+**********************************/
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0
+    }
+
+    a, a:hover, a:visited, a:active 
+    {text-decoration: none}
+/**********************************
+***** Remove Default Settings *****
+**********************************/
+
+
+/*************************************************
+********************** MENU **********************
+**************************************************/
+    #advanced-nav ul {
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px
+    }
+
+    #advanced-nav li {
+        display: flex;
+        justify-content: center;
+        flex: 1
+    }
+
+    #advanced-nav a {
+        display: flex;
+        padding: 15px 0px;
+        flex: 1;
+        background-color: #262626;
+        color: #f2f2f2;
+        font-size: 1.5em
+    }
+
+    #advanced-nav a:hover {
+        background-color: #f2f2f2;
+        color: #262626
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        padding: 0 17px 0 10px;
+        font-size: 2.5rem
+    }
+
+    .button-text span {
+        display: block;
+        padding: 5px 0;
+        font-size: initial;
+        font-style: italic;
+    }
+
+    @media (max-width: 750px)
+    {
+        #advanced-nav ul {flex-direction: column}
+
+        #advanced-nav a {
+            padding-left: 10px;
+            text-align: initial
+        }
+    }
+/*************************************************
+********************** MENU **********************
+**************************************************/
