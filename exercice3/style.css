@@ -20,9 +20,9 @@ body {
 ***** Remove Default Settings *****
 **********************************/
     ul {
-        list-style-type: none;
         margin: 0;
-        padding: 0
+        padding: 0;
+        list-style-type: none
     }
 /**********************************
 ***** Remove Default Settings *****
@@ -34,10 +34,11 @@ body {
 **************************************************/
     .sandwich {
         padding: 10px;
-        background-color: #86cbfd;
+        min-width: 395px;
         text-align: center;
         text-transform: uppercase;
-        font-size: 100px
+        font-size: 100px;
+        background-color: #86cbfd;
     }
 
     @media (max-width: 1050px)
